@@ -2,12 +2,12 @@ version: '3'
 services:
   app:
     build: Docker/php
-    container_name: Project
+    container_name: PC_PHP
     volumes:
       - ./:/var/www
   nginx:
     image: nginx:1.17
-    container_name: skillup_nginx
+    container_name: PC_nginx
     ports:
       - 8011:80
     volumes:
