@@ -12,6 +12,6 @@ services:
       - 8011:80
     volumes:
       - ./:/var/www
-      - ./docker/nginx/skillup.local.conf:/etc/nginx/conf.d/skillup.local.conf
+      - ./docker/nginx/nginx.local.conf:/etc/nginx/conf.d/nginx.local.conf
     depends_on:
       - app
